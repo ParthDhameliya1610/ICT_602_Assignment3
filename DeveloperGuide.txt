@@ -1,0 +1,21 @@
+ 
+ 
+> Short Developer Guide
+
+Smart Healthcare Appointment & Management System (SHAMS) 
+is organized in line with the MVC pattern where all the key 
+classes are directly related to the design diagram.
+
+ - Model Layer: In the model Layer, there are the following classes:
+ User.java (base class), its subclasses, Admin.java, Doctor.java and Patient.java, and the following ones, 
+ Appointment.java, Prescription.java and InMemDB.java providing representation of data storage.
+ 
+ - serviceLayer : In the service Layer, it has the file of service used to support business logic and validations 
+ which are AdminService.java, DoctorService.java, PatientService.java, AuthService.java and ValidationService.java.
+ 
+ - Controller Layer: Within controller Layer, there are AdminController.java, DoctorController.java and PatientController.java,
+ which are used to connect views to services.
+
+ - View Layer: The view layer, contained in the view package, such as main menu view (MainMenuView.java), admin menu view 
+ (AdminMenuView.java), doctor menu view (DoctorMenuView.java) and patient menu view (PatientMenuView.java) to interact with
+ the console. This design is a clear correspondence to the conceptual UML class diagram.
